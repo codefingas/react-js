@@ -4,15 +4,19 @@ class App extends React.Component {
             age : 35
         }
 
-        handleClick(e) {//this function fires everytime a user clicks
-            console.log(e.target)
+        handleClick = (e) => {//this function fires everytime a user clicks
+            // console.log(e.target)
+            this.setState({
+                name : 'Yoshi'
+            })
+            console.log(this.state);
         }
 
-        handleMouseHover(e) {//this function fires everytime  a user hovers over the element
+        handleMouseHover = (e) => {//this function fires everytime  a user hovers over the element
             console.log(e.target, e.pageX); //logging the target element and the 
         }
 
-        handleCopy(e) {//this function fires every time a user tries to copy stuff
+        handleCopy = (e) => {//this function fires every time a user tries to copy stuff
             console.log('try being original for once');
         }
 
